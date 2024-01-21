@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  
+       
+
+	      
+        <record id="view_categorie_courrier_tree" model="ir.ui.view">
+            <field name="name">center.impot</field>
+            <field name="model">center.impot</field> 
+            <field name="type">tree</field>
+            <field name="arch" type="xml" >
+               <tree string="Centre d'impôt">
+                        <field name='code'/>
+                    	<field name='libelle'/>                	
+                  	 
+               </tree>   	
+            </field>
+        </record>
+
+
+
+    <record model="ir.actions.act_window" id="action_form_categorie_courrier">
+        <field name="name">Centre d'impôt</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">center.impot</field>        
+        <field name="view_mode">tree,form</field>
+        
+    </record>
+    
+    
+
+    <menuitem action="action_form_categorie_courrier" id="suivi_conf_categorie_courrier_add" parent="menu_courrier_configuration" sequence="1"/>
+
+
+    
+</odoo>

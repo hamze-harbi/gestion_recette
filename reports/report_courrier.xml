@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+  <template id="report_courrier" >
+	 <t t-call="web.basic_layout">
+         <t t-foreach="docs" t-as="o">
+
+                        <div style="border:1px solid black;">
+                            <div style="text-align:center;">
+                                <img src="https://cnss.dj/wp-content/uploads/2021/12/logo-cnss.png" height="150" width="150"/>
+			</div><br/>
+                            <div>
+                                <tr>
+                                    <td> 
+                                       <div align="left"> <h3 style="margin-left:40px;">Référence  courrier :<span style="color:#999999; padding-left:60px;" t-field="o.refcourrier"/></h3> </div>
+			       </td>
+			       <td>
+				       <div> <h3 style="margin-left:40px;">Date de dépôt:  <span style="color:#999999; padding-left:60px;" t-field="o.date_depot" /></h3> </div>
+		       </td></tr>
+
+		       <tr>   
+				 <td>
+                                        <div align="left"> <h3 style="margin-left:40px;">Nom du client:  <span style="color:#999999; padding-left:60px" t-field="o.client_id.name"/></h3> </div>
+                                </td>
+                                      
+			       <td>
+
+					    <div align="left"><h3 style="margin-left:40px;">Type du courrier:
+					    <span style="color:#999999;  padding-left:60px;" t-field="o.typecourrier_id.name" /> </h3>
+                                        </div>
+				</td>
+					<td>
+                                            <div align="left"><h3 style="margin-left:40px;">Objet du courrier:
+                                            <span style="color:#999999;  padding-left:60px;" t-field="o.objet_id.name" /> </h3>
+                                        </div>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                   <td> 
+                                        <div align="right">
+                                            <span style="margin-left:-60px; padding-right:60px;"> <img alt="Barcode" t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('QR',('http://10.100.0.6:4000?ref='+ str(o.refcourrier)), 125, 125)"/> </span>
+                                        </div>
+                                    </td>
+
+                                </tr>
+                            </div>
+                        </div>
+         </t>
+       </t>
+
+
+
+    </template>
+
+</odoo>

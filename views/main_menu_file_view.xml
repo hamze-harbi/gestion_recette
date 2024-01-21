@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>    
+
+	<menuitem id = "menu_courrier_root" name = "Gestion des Recettes" sequence = "1" web_icon="recouvrement_declaration,static/description/recette.png"/>
+	<menuitem id="menu_courrier_gestion" parent="menu_courrier_root" name="Gestion des Recette" sequence="1"/>
+	<menuitem id="menu_courrier_configuration" parent="menu_courrier_root" name="Configuration" sequence="3"/>
+    
+</odoo>

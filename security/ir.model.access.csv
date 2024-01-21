@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_recouvrement_declaration,access.recouv.declaration,model_recouvrement_declaration,,1,1,1,1
+access_banque,access.res.bank,model_banque,,1,1,1,1
+access_center_impot,access.center.impot,model_center_impot,,1,1,1,1

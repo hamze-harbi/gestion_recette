@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+ 
+        Your other XML data
+        <record id="suivi_conf_banque_add" model="ir.ui.menu">
+            <field name="name">Banque</field>
+            <field name="sequence" eval="16"/>
+            <field name="parent_id" ref="menu_courrier_configuration"/>
+            <field name="action" ref="base.action_res_bank_form"/> <!-- Use the action of res.bank -->
+        </record>
+
+</odoo>

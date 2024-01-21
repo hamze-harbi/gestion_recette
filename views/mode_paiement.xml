@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	         
+        <record id="view_mode_paiement_form" model="ir.ui.view">
+            <field name="name">mode.paiement</field>
+            <field name="model">mode.paiement</field>            
+            <field name="arch" type="xml">
+                <form> 
+                    <sheet>          
+                        <group colspan="4" col="4">
+                            <field name='name'/>
+                            <field name='libelle'/>              	
+                        </group> 
+                    </sheet> 
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user"/>
+                        <field name="activity_ids" widget="mail_activity"/>
+                        <field name="message_ids" widget="mail_thread" options="{'post_refresh': 'recipients'}"/>
+                    </div>
+                 </form>
+            </field>
+        </record>   
+	      
+	      
+        <record id="view_mode_paiement_tree" model="ir.ui.view">
+            <field name="name">mode.paiement</field>
+            <field name="model">mode.paiement</field> 
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+               <tree string="Mode de Paiement">
+                        <field name='name'/>
+                    	<field name='libelle'/>                   	
+                  	 
+               </tree>   	
+            </field>
+        </record>
+
+
+
+        <record model="ir.actions.act_window" id="action_form_modepaiement">
+            <field name="name">Mode de paiement</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">mode.paiement</field>        
+            <field name="view_mode">tree,form</field>
+            
+        </record>
+        
+        
+    
+        <menuitem action="action_form_modepaiement" id="suivi_conf_modepaiement_add" parent="menu_courrier_configuration" sequence="18"/>
+
+
+    
+</odoo>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data noupdate="1">
+		<record id="seq_ref_courrier" model="ir.sequence">
+			<field name="name">Ref Declaration </field>
+			<field name="code">recouvrement.declaration.seq</field>
+			<field name="prefix">DC/</field>
+			<field name="suffix">/24</field>
+			<field name="padding">8</field>
+			<field name="company_id" eval="False" />
+		</record>
+	</data>
+</odoo>
+

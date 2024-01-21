@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    
+    <report
+            id="report_courrier_qrcode"
+            model="suivi.courrier"
+            string="Fiche de Tracking"
+            report_type="qweb-pdf"
+            name="suivi_courrier.report_courrier"
+            file="suivi_courrier.report_courrier"
+    />
+
+</odoo>

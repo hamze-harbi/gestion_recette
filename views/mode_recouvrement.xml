@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	         
+        <record id="view_mode_recouvrement_form" model="ir.ui.view">
+            <field name="name">mode.recouvrement</field>
+            <field name="model">mode.recouvrement</field>            
+            <field name="arch" type="xml">
+                <form>           
+                	<group colspan="4" col="4">
+                        <field name='code'/>
+                        <field name='libelle'/>      
+                    	
+                    	              	
+                  	</group>  
+                 </form>
+            </field>
+        </record>   
+	      
+	      
+        <record id="view_mode_recouvrement_tree" model="ir.ui.view">
+            <field name="name">mode.recouvrement</field>
+            <field name="model">mode.recouvrement</field> 
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+               <tree string="Mode de Recouvrement">
+                        <field name='code'/>
+                        <field name='libelle'/>  
+                    	
+                    	                 	
+                  	 
+               </tree>   	
+            </field>
+        </record>
+
+
+
+        <record model="ir.actions.act_window" id="action_form_mode_recouvrement">
+            <field name="name">Mode de Recouvrement</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">mode.recouvrement</field>        
+            <field name="view_mode">tree,form</field>
+            
+        </record>
+        
+        
+    
+        <menuitem action="action_form_mode_recouvrement" id="suivi_conf_mode_recouvrement_add" parent="menu_courrier_configuration" sequence="10"/>
+
+
+    
+</odoo>

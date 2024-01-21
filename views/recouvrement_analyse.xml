@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	<!-- <record id="action_courrier_analyse" model="ir.actions.act_window">
+	        <field name="name">Analyses des Courriers</field>
+	        <field name="type">ir.actions.act_window</field>
+	        <field name="res_model">recouvrement.declaration</field>
+	        <field name="view_mode">graph,pivot</field>
+	        <field name="context">{}</field>
+	        <field name="help" type="html">
+	          <p class="o_view_nocontent_smiling_face">
+	            Créer votre recouvrement !
+	          </p>
+	        </field>
+	 </record>
+	
+
+	<menuitem id="suivi_courrier_analyse" 
+	          name="Analyses des Recouvrements" 
+	          parent="menu_courrier_gestion" 
+	          action="action_courrier_analyse" 
+	          sequence="11"
+	 
+	/>
+	-->
+	
+	
+     
+    
+
+
+
+
+
+</odoo>
